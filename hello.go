@@ -1,7 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/rayraycano/stringutil"
+)
 
 func main() {
-    fmt.Printf("Ni Hao bruh bruh\n")
+	s := "Ni Hao bruh bruh"
+    fmt.Println(s)
+    fmt.Println("Missy Elliot Says: 'REVERSE!'")
+    fmt.Println(stringutil.Reverse(s))
+
+    m := stringutil.RuneCount(s)
+    fmt.Println("\nCounts:", m)
+    // fmt.Printf(stringutil.RuneCount(s))
 }
